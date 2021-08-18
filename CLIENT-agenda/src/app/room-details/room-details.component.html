@@ -1,0 +1,21 @@
+<h2>Detalhes da Reunião</h2> 
+
+<hr/>
+<div *ngIf="room">
+  <div>
+    <label><b> Nome </b></label> {{room.name}}
+  </div>
+  <div>
+    <label><b> Data</b></label> {{room.date}}
+  </div>
+  <div>
+    <label><b> Início</b></label> {{room.startHour}}
+  </div>
+    <div>
+    <label><b> Término</b></label> {{room.endHour}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Voltar para lista de reuniões</button><br>
